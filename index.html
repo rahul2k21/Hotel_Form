@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostel Registration Form</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="nav">
+    <h1>Hotel Booking Registration Form</h1>
+  </div>
+  <div class="container">
+    
+      <div class="book1">
+        <label>Customer Name:*</label>
+        <input type="text" id="bookone" placeholder="Enter your Name" required>
+      </div>
+      <div class="book3">
+        <label>Total Number of days:</label>
+        <input type="number" id="bookthree"  placeholder="Enter No. of days" required>
+      </div>
+      <div class="book2">
+        <label>Check in Date:</label>
+        <input type="date" id="booktwo" required>
+      </div>
+      <div class="book4">
+        <label>Total Number of Persons:</label>
+        <input type="number" id="bookfour" required placeholder="Enter No. of Person">
+      </div>
+      <div class="book5">
+        <label>Room Type:</label>
+        <input type="radio" id="bookfive" name="type">Dulex
+        <input type="radio" id="radio" name="type">Suite
+      </div>
+      <div class="costroom">
+        <label>Total Cost of Room Per Day:</label>
+        <input type="number" id="costroom">
+      </div>
+      <div class="book6">
+        <label>Aminities</label>
+        <input type="checkbox" id="booksix" name="aminities">AC : (1000)
+        <input type="checkbox" id="radio" name="aminities">Locker : (500)
+      </div>
+      <div class="costaminities">
+        <label>Total cost of Aminities Per Day:</label>
+        <input type="number" id="costaminities">
+      </div>
+
+      <div class="advance">
+        <label>Advance Amount:*</label>
+        <input type="number" id="Advance" required>
+      </div>
+      
+      <hr>
+      <div>
+        <button  class="btn" onclick="return calculate()">Calculate</button>
+      </div>
+      <hr>
+      <h3>*Additional Charges</h3>
+      <div>
+        <h6>
+          -upto 2 people no charges in cost. <br>
+          -per day cost for extra person: 1000/-
+        </h6>
+        <hr>
+        
+      </div>
+    </form>
+    <div>
+      <table>
+        <tr>
+          <td>Total Room cost:</td>
+          <td id="ftotal"></td>
+        </tr>
+
+        <tr>
+          <td>Total Aminities cost:</td>
+          <td id="faminities"></td>
+        </tr>
+
+        <tr>
+          <td>Grand Total:</td>
+          <td id="totalf"></td>
+        </tr>
+
+        <tr>
+          <td>Balance Amount:</td>
+          <td id="balance"></td>
+        </tr>
+
+
+      </table>
+    </div>
+
+  </div>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
